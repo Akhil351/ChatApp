@@ -12,6 +12,8 @@ spring:
   #    show-sql: true
   main:
     banner-mode: off
+frontEnd:
+  url: ${FRONTEND_URL}
 #logging:
 #  level:
 #    root: ERROR

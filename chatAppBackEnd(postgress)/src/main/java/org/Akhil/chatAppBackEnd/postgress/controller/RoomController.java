@@ -1,7 +1,6 @@
 package org.Akhil.chatAppBackEnd.postgress.controller;
 
 
-import org.Akhil.chatAppBackEnd.postgress.config.AppConstants;
 import org.Akhil.chatAppBackEnd.postgress.entity.Message;
 import org.Akhil.chatAppBackEnd.postgress.entity.Room;
 import org.Akhil.chatAppBackEnd.postgress.payload.Response;
@@ -20,7 +19,6 @@ import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin(AppConstants.FRONT_END_BASE_URL)
 public class RoomController {
     @Autowired
     private RoomService roomService;

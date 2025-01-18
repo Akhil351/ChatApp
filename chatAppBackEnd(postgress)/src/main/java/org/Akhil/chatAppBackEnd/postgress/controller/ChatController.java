@@ -1,6 +1,5 @@
 package org.Akhil.chatAppBackEnd.postgress.controller;
 
-import org.Akhil.chatAppBackEnd.postgress.config.AppConstants;
 import org.Akhil.chatAppBackEnd.postgress.entity.Message;
 import org.Akhil.chatAppBackEnd.postgress.entity.Room;
 import org.Akhil.chatAppBackEnd.postgress.exception.NotFound;
@@ -12,12 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(AppConstants.FRONT_END_BASE_URL)
 public class ChatController {
 
     @Autowired
