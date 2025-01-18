@@ -29,11 +29,13 @@ const JoinCreateChat = () => {
         }
     }
     async function joinRoom() {
+        
         if (validateForm()) {
             // join Room
             try {
                 const response = await joinRoomApi(detail.roomId)
                 toast.success("joined...")
+                console.log(response.data);
                 setCurrentUser(detail.userName);
                 setRoomId(response.data.roomId);
                 setConnected(true)
